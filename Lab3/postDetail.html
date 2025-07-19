@@ -21,7 +21,7 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link text-black" href="#"><i class="fa-solid fa-list"></i> Bài viết</a>
+                        <a class="nav-link text-black" href="./post.html"><i class="fa-solid fa-list"></i> Bài viết</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link text-black" href="#"><i class="fa-solid fa-film"></i> Video</a>
@@ -113,15 +113,13 @@
             <div class="col-lg-4">
                 <div class="mb-4">
                     <h5 class="fw-bold">Bình luận vài viết tại đây</h5>
-                    <textarea class="form-control" rows="3" placeholder="Nhập bình luận của bạn"></textarea>
-                    <button class="btn btn-success mt-2">Gửi bình luận</button>
+                    <textarea id="nhap" class="form-control" rows="3" placeholder="Nhập bình luận của bạn"></textarea>
+                    <button onclick="send()" class="btn btn-success mt-2">Gửi bình luận</button>
                 </div>
 
                 <div>
                     <h5 class="fw-bold">Danh sách các bình luận:</h5>
-                    <ul class="list-unstyled">
-                        <li>• <strong>Bình An:</strong> Bài viết rất hữu ích</li>
-                        <li>• <strong>Bình An:</strong>Cảm ơn những chia sẻ bổ ích</li>
+                    <ul id="noidung" class="list-unstyled">
                     </ul>
                 </div>
             </div>
@@ -132,4 +130,17 @@
     <footer class="bg-dark text-white text-center p-4">
         &copy;Copyright by FPT Polytechnic
     </footer>
+
+    <script>
+        function send() {
+            const nhap = document.getElementById("nhap").value.trim();
+            const noidung =  document.getElementById("noidung");
+            if (nhap === "") return;
+            const li = document.createElement("li");
+            li.innerHTML = `<strong>La Hung:</strong> ${nhap}`;
+            noidung.appendChild(li);
+            nhap.value = "";
+        }
+    </script>
+
 </html>

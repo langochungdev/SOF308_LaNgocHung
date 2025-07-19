@@ -14,53 +14,61 @@
 
 <body>
     <!-- Navbar -->
-    <header>
-        <nav class="navbar navbar-expand-sm">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="images/logo-energy-pilates.png" alt="logo" width="150px">
-                </a>
-                <div class="collapse navbar-collapse" id="collapsibleNavbar">
-                    <ul class="navbar-nav me-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="post.html"><i class="fa-solid fa-list"></i> Bài viết</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-film"></i> Video</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-circle-info"></i> Giới thiệu</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fa-solid fa-calendar-days"></i> Sự kiện</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                                <i class="fa-solid fa-user"></i> Tài khoản
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
-                                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
-                                <li><a class="dropdown-item" href="#">Đăng ký thành viên</a></li>
-                            </ul>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav d-flex">
-                        <li class="nav-item">
-                            <a class="nav-link">Tiếng Việt</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link">Tiếng Anh</a>
-                        </li>
-                    </ul>
-                </div>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary-subtle">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo-energy-pilates.png" style="width: 150px" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="./post.html"><i class="fa-solid fa-list"></i> Bài viết</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#"><i class="fa-solid fa-film"></i> Video</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#"><i class="fa-solid fa-circle-info"></i> Giới
+                            thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#"><i class="fa-solid fa-calendar-days"></i> Sự
+                            kiện</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-black" href="#" role="button" data-bs-toggle="dropdown"><i
+                                class="fa-solid fa-user"></i> Tài khoản</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a class="dropdown-item" href="#">Đăng nhập</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Quên mật khẩu</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">Đăng ký thành viên</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="navbar-nav d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-black">Tiếng Việt</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black">Tiếng Anh</a>
+                    </li>
+                </ul>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Carousel -->
     <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -70,13 +78,13 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="2000">
                     <img src="images/banner1.jpg" class="d-block w-100" alt="banner1">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img src="images/banner2.jpg" class="d-block w-100" alt="banner2">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="3000">
                     <img src="images/banner3.jpg" class="d-block w-100" alt="banner3">
                 </div>
             </div>
@@ -126,10 +134,10 @@
                             </div>
                         </div>
                     </div>
-
+                    <!-- list trai -->
                     <div class="col-md-6 d-flex align-items-stretch">
-                        <ul class="list-group mb-3">
-                            <li class="list-group-item">
+                        <ul class="list-group list-unstyled mb-3">
+                            <li class="list-group-item-action">
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <img src="images/corevalue.jpg" alt="thumbnail" class="float-start"
@@ -141,7 +149,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item-action">
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <img src="images/orange_300x300.jpg" alt="thumbnail" class="float-start"
@@ -153,7 +161,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item-action">
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <img src="images/sesameoil_300x300.jpg" alt="thumbnail" class="float-start"
@@ -165,7 +173,7 @@
                                     </div>
                                 </div>
                             </li>
-                            <li class="list-group-item">
+                            <li class="list-group-item-action">
                                 <div class="row">
                                     <div class="col-sm-4">
                                         <img src="images/spinach_300x300.jpg" alt="thumbnail" class="float-start"
@@ -183,11 +191,9 @@
                 <button href="#" class="btn btn-primary mx-auto d-block mt-3">Xem thêm</button>
             </div>
         </div>
-    </div>
 
-    <div class="container my-5">
         <div class="row">
-            <!-- aside -->
+            <!-- đọc nhiều -->
             <div class="col-4">
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">

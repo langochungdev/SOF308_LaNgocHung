@@ -17,7 +17,12 @@
         <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
             Tài khoản
         </button>
+        
     </div>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#dangnhap">
+        đăng nhập
+    </button>
+    <!-- modal  -->
     <div class="modal" id="myModal" style="--bs-modal-width: 600px;">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -30,7 +35,6 @@
                         <li class="nav-item">
                             <a class="nav-link" data-bs-toggle="tab" href="#login">Đăng nhập</a>
                         </li>
-                        <li class="nav-item"></li>
                     </ul>
                     <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                 </div>
@@ -121,6 +125,57 @@
                                             <div class="col-sm-13">
                                                 <input type="text" class="form-control" id="email"
                                                     placeholder="Nhập email">
+                                            </div>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="password" class="col-sm-4 col-form-label">
+                                                Mật khẩu:
+                                            </label>
+                                            <div class="col-sm-13">
+                                                <input type="password" class="form-control" id="password"
+                                                    placeholder="Nhập mật khẩu">
+                                            </div>
+                                        </div>
+                                        <hr>
+                                        <button class="btn btn-primary mx-auto d-block m-3" style="width: 30%;">
+                                            Đăng nhập
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal 2 -->
+    <div class="modal" id="dangnhap" style="--bs-modal-width: 600px;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- modal header -->
+                <div class="modal-header">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#login2">Đăng nhập</a>
+                        </li>
+                    </ul>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="tab-content">
+                        <!-- dang nhap -->
+                        <div id="login2" class="container tab-pane fade"><br>
+                            <div class="card">
+                                <div class="card-header bg-primary text-white">Đăng nhập</div>
+                                <div class="card-body">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="email" class="col-sm-4 col-form-label">
+                                                Email:
+                                            </label>
+                                            <div class="col-sm-13">
+                                                <input type="text" class="form-control" id="email" placeholder="Nhập email">
                                             </div>
                                         </div>
                                         <div class="mb-3">
